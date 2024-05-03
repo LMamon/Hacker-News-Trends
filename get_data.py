@@ -20,7 +20,6 @@ def insert_story(story):
 def get_last_100():
     url = "https://hacker-news.firebaseio.com/v0/topstories"
     response = requests.get(url)
-    
     top_stories_ids = response.json()[:100]
 
     table_data = []
